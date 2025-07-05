@@ -1,11 +1,14 @@
-import CabinList from "@/app/_components/CabinList";
 import { Suspense } from "react";
+import CabinList from "@/app/_components/CabinList";
 import Spinner from "../_components/Spinner";
 
 export const metadata = {
   title: "Cabins",
   description: "Explore our luxury cabins in the wild",
 };
+
+export const revalidate = 3600;
+// export const revalidate = 15;
 
 export default function Page() {
   return (
