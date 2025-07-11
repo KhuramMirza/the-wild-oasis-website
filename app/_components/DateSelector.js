@@ -43,7 +43,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
         fromDate={new Date()}
         toYear={new Date().getFullYear() + 5}
         captionLayout="dropdown"
-        numberOfMonths={2}
+        numberOfMonths={1}
         disabled={(curDate) =>
           isPast(curDate) ||
           bookedDates.some((date) => isSameDay(date, curDate))
